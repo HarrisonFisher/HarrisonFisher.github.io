@@ -1,0 +1,291 @@
+ %-----------CS Resume Template                                        -----------
+ %-----------Based on "Jack's Resume" (by Jake Gutierrez, MIT License) -----------
+ %-----------Modified by Shengyuan Lu (MIT License)                    -----------
+ %-----------GitHub: https://github.com/shengyuan-lu                   -----------
+ %-----------Linkedin: https://www.linkedin.com/in/shengyuan-lu/       -----------
+  
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[super]{nth}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Harrison Fisher} \\ \vspace{7pt}
+    \small (707)908-6532 $ | $ 
+    \href{mailto:harrison.fisher2018@gmail.com}{\underline{harrison.fisher2018@gmail.com}} $ | $ 
+    \href{https://www.linkedin.com/in/harrison-fisher-3838a3228/}{\underline{\faLinkedin \hspace{1pt} linkedin.com/in/Harrison-Fisher-CS}} $ | $
+    \href{https://GitHub.com/HarrisonFisher}{\underline{\faGithub \hspace{1pt} github.com/HarrisonFisher}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+  % East Bay
+  % 36 CS Credits
+  % 
+  % May 12 2023
+
+  % DVC
+  % 20 CS Credits
+  % 
+
+  % Total: 126
+  
+  % {California State University East Bay, Hayward, CA}{Graduation Date: May 2023}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      % {California State University East Bay, Hayward, CA}{Graduation Date: August 2021 - May 2023}
+      {California State University East Bay, Hayward, CA}{August 2021 - May 2023}
+      {Bachelor of Science, Computer Science}{}
+
+    \resumeSubheading
+      {Diablo Valley College, Pleasant Hill, CA}{August 2018 - May 2021}
+      {Associate  in Science, Computer Science}{}
+  \resumeSubHeadingListEnd
+  
+%-----------PROGRAMMING SKILLS-----------
+% trello
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C++, Lua, Java, Python, C, R, SQL, HTML, CSS, JavaScript, LISP, RISC-V, MIPS, MASM} \\
+     \textbf{Developer Tools}{: Visual Studio Code, Visual Studio, CLion, Xcode, Eclipse IDE, R Studio, Git/GitHub} \\
+     \textbf{Libraries/Frameworks}{: Microsoft Foundational Classes (MFC), Swing (Java)} \\
+     \textbf{Spoken Languages}{: English (Native)} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    % \resumeSubheading
+    %   {Admission Officer}{September 2020 -- Present}
+    %   {St. Anford Office of Admission and Financial Aid}{Berkeley, California, United States}
+    %   \resumeItemListStart
+    %     \resumeItem{Randomly select \textbf{50,000} qualified applicants to reject each year unless the applicants is a legacy or pays millions to William Rick Singer.}
+    %   \resumeItemListEnd
+      
+    % \resumeSubheading
+    %   {Software Engineer Intern}{July 2021 -- September 2021}
+    %   {Some Big Scientist Name Company}{Mars, Solar system}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed a \textbf{long range rocket} that can send ants to Mars and cost as little as a house in Bay Area.}
+    %     \resumeItem{Tried every kind of snacks offered at the office, including \textbf{La Tiao} (Spicy Bar).}
+    %     \resumeItem{Finished \textbf{500} Leetcode questions while the manager was off duty.}
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+    {Freelance AI Trainer for Outlier.ai}{June 2024 -- Present}
+    {Scale AI, Inc.}{Remote}
+    \resumeItemListStart
+      \resumeItem{Evaluate the ability of large language models to call API tools.}
+      \resumeItem{Rate provided responses on tool choice, function, and parameter correctness.}
+      \resumeItem{Indicate which response is better with a side-by-side rating and written justification.}
+    \resumeItemListEnd
+
+    % May 16th - Augh 5th 2022
+    \resumeSubheading
+    {Informatics Intern}{May 2022 -- August 2022}
+    {Genentech, Inc.}{Remote}
+    \resumeItemListStart
+      \resumeItem{Contributed to the development of an open-source base-call-to-FASTQ converter to replace bcl2fastq2.}
+      \resumeItem{Conducted research on the documentation and code for bcl2fastq by Illumina.}
+      \resumeItem{Utilized an SSH server to access test data for the bcl2fastq program.}
+      \resumeItem{Developed C++ code for parsing XML and CSV files from the test data.}
+      \resumeItem{Implemented C++ code to manage various command-line arguments.}
+      \resumeItem{Updated and built Docker images from Docker files.}
+      % \resumeItem{Implemented a C/C++ software that can execute the conversion task in parallel}
+      % \resumeItem{Extended this package to support alternative sequencing technologies, such as MGI sequencing}
+    \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {CurtainOS Developer}{January 2019 -- Present}
+    %   {Self-Employed}{Blue Screen of Death}
+    %   \resumeItemListStart
+    %     \resumeItem{Fixed the \textbf{planet-wide} blackout caused by CurtainOS 8.}
+    %     \resumeItem{Developed CurtainOS 11 task bar and widget section by \textbf{copying} FruitOS X.}
+    % \resumeItemListEnd
+    
+
+\resumeSubHeadingListEnd
+
+%-----------Leadership-----------
+\section{Leadership Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Project Team Lead}{January 2022 -- May 2022}
+      {California State University East Bay}{Hayward, California, United States}
+      \resumeItemListStart
+        \resumeItem{Led a team in developing a Java-based chat system as part of a Software Engineering course, taking primary responsibility for implementing client-side functionalities and contributing to shared classes.}
+        \resumeItem{Managed the project lifecycle to ensure timely completion and adherence to project requirements, from initial gathering to documentation.}
+        \resumeItem{Facilitated communication and coordination among team members, incorporating feedback for iterative improvements.}
+        \resumeItem{Engaged in regular meetings with the instructor acting as a client, providing updates and incorporating feedback.}
+        \resumeItem{Utilized Git and GitHub for version control and effective collaboration.}
+        \resumeItem{Demonstrated problem-solving skills and adeptness in troubleshooting technical issues.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------RELEVANT COURSES-----------
+\section{Relevant Courses}
+\vspace{-\baselineskip} % Adjust vertical space
+\begin{multicols}{2}
+\resumeItemListStart
+  \resumeItem{Data Structures \& Algorithms}
+  \resumeItem{Software Engineering}
+  \resumeItem{Website Development}
+  \resumeItem{Analysis of Algorithms}
+  % \resumeItem{Assembly Language Programming}
+\resumeItemListEnd
+\columnbreak
+\resumeItemListStart
+  \resumeItem{Computer Networks}
+  \resumeItem{Operating Systems}
+  \resumeItem{Object Oriented Programming C++}
+  \resumeItem{Database Architecture}
+  % \resumeItem{Programming Language Concepts}
+
+\resumeItemListEnd
+\end{multicols}
+
+%-----------PROJECTS-----------
+% \section{Personal Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\href{https://www.mindgeek.com/}{\faLink \hspace{1pt} \textbf{Auto Homework Coder}}\hspace{3pt}(FruitOS App) $|$ \emph{YellowBird, PieGames, ByteNotDacing}}{December 2020 -- Present}
+%           \resumeItemListStart
+%             \resumeItem{Can automatically complete coding assignments for college students and \textbf{avoid MOSS} detection.}
+%             \resumeItem{\textbf{Localized in 69 languages}, this app intends to reach a \textbf{global} community of struggling computer science majors.}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\href{https://www.mindgeek.com/}{\faLink \hspace{1pt} \textbf{Crush or Not}}\hspace{3pt}(CurtainOS App) $|$ \emph{YellowBird, PieGames, ASUCB}}{April 2020}
+%           \resumeItemListStart
+%             \resumeItem{Use \textbf{state of art} machine learning, this app guesses if the person you like also likes you with \textbf{50\% accuracy}.}
+%             \resumeItem{Players enter his or her personality and the target person's personality for the AI model to make a guess.}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\href{https://www.mindgeek.com/}{\faLink \hspace{1pt} \textbf{College Rejection Simulator}}\hspace{3pt}(FruitOS Game) $|$ \emph{BigSnake, ASUCB, ByteNotDacing}}{March 2019}
+%           \resumeItemListStart
+%             \resumeItem{To avoid heart breaks, this game prepares \textbf{aspiring high school} students to embrace college rejections on \textbf{Ivy day}.}
+%             \resumeItem{Implemented an \textbf{in-app purchase} system so students can access college acceptance simulator.}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+%-----------Recent Awards-----------
+\section{Awards}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+        \textbf{Dean's List: Fall 2022}\hspace{1pt} (GPA 3.650) \hspace*{\fill} August 2022
+    }
+}
+\end{itemize}
+%-------------------------------------------
+
+\begin{center}
+  \tiny 377 McAllister Dr., Benicia, CA 94510
+\end{center}
+
+\end{document}
+
