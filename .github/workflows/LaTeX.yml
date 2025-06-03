@@ -1,0 +1,60 @@
+name: Auto-compile and commit LaTeX PDFs
+
+on:
+  push:
+    paths:
+      - '*.tex' # Only look for .tex files in the root directory
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Needed to commit back to repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Detect changed .tex files
+        id: detect
+        run: |
+          git fetch origin ${{ github.event.before }}
+          FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^[^/]*\.tex$' || true)
+          echo "$FILES" > texfiles.txt
+          echo "root_files<<EOF" >> $GITHUB_OUTPUT
+          echo "$FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: ${{ steps.detect.outputs.root_files }}
+          latexmk_shell_escape: true
+
+      - name: Move compiled PDFs to pdfs folder
+        run: |
+          mkdir -p pdfs
+          for file in ${{ steps.detect.outputs.root_files }}; do
+            pdf_file="${file%.tex}.pdf"
+            if [ -f "$pdf_file" ]; then
+              mv "$pdf_file" pdfs/
+            fi
+          done
+
+      - name: Commit compiled PDFs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          # Add only compiled .pdf files in the pdfs folder
+          git add pdfs/*.pdf
+
+          # Skip commit if nothing to add
+          if git diff --cached --quiet; then
+            echo "No PDF changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Auto-compile LaTeX PDFs [skip ci]"
+          git push
