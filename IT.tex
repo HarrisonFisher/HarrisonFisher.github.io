@@ -1,0 +1,250 @@
+%-----------CS Resume Template                                        -----------
+%-----------Based on "Jack's Resume" (by Jake Gutierrez, MIT License) -----------
+%-----------Modified by Shengyuan Lu (MIT License)                    -----------
+%-----------GitHub: https://github.com/shengyuan-lu                   -----------
+%-----------Linkedin: https://www.linkedin.com/in/shengyuan-lu/       -----------
+  
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[super]{nth}
+\input{glyphtounicode}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Harrison Fisher} \\ \vspace{7pt}
+    \small (707)908-6532 $ | $ 
+    \href{Harrison.Fisher2018@gmail.com}{\underline{Harrison.Fisher2018@gmail.com}} $ | $ 
+    \href{https://www.linkedin.com/in/harrison-fisher-cs/}{\underline{\faLinkedin \hspace{1pt} linkedin.com/in/harrison-fisher-cs}} $ | $
+    \href{https://github.com/HarrisonFisher}{\underline{\faGithub \hspace{1pt} github.com/HarrisonFisher}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+  % East Bay
+  % 36 CS Credits
+  % 
+  % May 12 2023
+
+  % DVC
+  % 20 CS Credits
+  % 
+
+  % Total: 126
+  
+  % {California State University East Bay, Hayward, CA}{Graduation Date: May 2023}
+
+\section{Education}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading
+      {Diablo Valley College, Pleasant Hill, CA}{September 2025 - Present}
+      {IT Essentials (A+), Microsoft Windows OS Essentials/Admin, and Introduction to Networks}{}
+      
+    \resumeSubheading
+      % {California State University East Bay, Hayward, CA}{Graduation Date: August 2021 - May 2023}
+      {California State University East Bay, Hayward, CA}{August 2021 - May 2023}
+      {Bachelor of Science, Computer Science}{}
+
+    \resumeSubheading
+      {Diablo Valley College, Pleasant Hill, CA}{August 2018 - May 2021}
+      {Associate  in Science, Computer Science}{}
+  \resumeSubHeadingListEnd
+  
+%-----------PROGRAMMING SKILLS-----------
+% trello
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C++, Lua, Java, Python, C, R, SQL, HTML, CSS, JavaScript, LISP, RISC-V, MIPS, MASM} \\
+     \textbf{Developer Tools}{: Visual Studio Code, Visual Studio, CLion, Xcode, Eclipse IDE, R Studio, Git/GitHub} \\
+     \textbf{Libraries/Frameworks}{: Microsoft Foundational Classes (MFC), Swing (Java)} \\
+     \textbf{Spoken Languages}{: English (Native)} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    % \resumeSubheading
+    %   {Admission Officer}{September 2020 -- Present}
+    %   {St. Anford Office of Admission and Financial Aid}{Berkeley, California, United States}
+    %   \resumeItemListStart
+    %     \resumeItem{Randomly select \textbf{50,000} qualified applicants to reject each year unless the applicants is a legacy or pays millions to William Rick Singer.}
+    %   \resumeItemListEnd
+      
+    % \resumeSubheading
+    %   {Software Engineer Intern}{July 2021 -- September 2021}
+    %   {Some Big Scientist Name Company}{Mars, Solar system}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed a \textbf{long range rocket} that can send ants to Mars and cost as little as a house in Bay Area.}
+    %     \resumeItem{Tried every kind of snacks offered at the office, including \textbf{La Tiao} (Spicy Bar).}
+    %     \resumeItem{Finished \textbf{500} Leetcode questions while the manager was off duty.}
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+    {Freelance AI Trainer for Outlier.ai}{June 2024 -- Present}
+    {Scale AI, Inc.}{Remote}
+    \resumeItemListStart
+      \resumeItem{Evaluate the ability of large language models to call API tools.}
+      \resumeItem{Rate provided responses on tool choice, function, and parameter correctness.}
+      \resumeItem{Indicate which response is better with a side-by-side rating and written justification.}
+    \resumeItemListEnd
+
+    % May 16th - Augh 5th 2022
+    \resumeSubheading
+    {Informatics Intern}{May 2022 -- August 2022}
+    {Genentech, Inc.}{Remote}
+    \resumeItemListStart
+      \resumeItem{Contributed to the development of an open-source base-call-to-FASTQ converter to replace bcl2fastq2.}
+      \resumeItem{Conducted research on the documentation and code for bcl2fastq by Illumina.}
+      \resumeItem{Utilized an SSH server to access test data for the bcl2fastq program.}
+      \resumeItem{Developed C++ code for parsing XML and CSV files from the test data.}
+      \resumeItem{Implemented C++ code to manage various command-line arguments.}
+      \resumeItem{Updated and built Docker images from Docker files.}
+      % \resumeItem{Implemented a C/C++ software that can execute the conversion task in parallel}
+      % \resumeItem{Extended this package to support alternative sequencing technologies, such as MGI sequencing}
+    \resumeItemListEnd
+
+    
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+        {\textbf{Custom Gaming PC Builds and Troubleshooting}}
+        \resumeItemListStart
+          \resumeItem{Built two high-performance gaming PCs}
+          \resumeItem{Selected and assembled hardware components including CPU, GPU, motherboard, RAM, PSU, and cooling systems.}
+          \resumeItem{Configured BIOS, installed OS, installed drivers.}
+          \resumeItem{Independently diagnosed and resolved hardware/software issues during their use.}
+        \resumeItemListEnd
+        
+      \resumeProjectHeading
+          {\href{https://github.com/stephengpope/no-code-architects-toolkit}{\faGithub \hspace{1pt} \textbf{stephengpope/no-code-architects-toolkit}}\hspace{3pt}(Contributor \& Maintainer)}{May 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Save thousands of dollars on API subscriptions with this open source API built in Python using Flask.}
+            \resumeItem{Works with Docker, Google Cloud Platform, Digital Ocean, and any system that hosts Docker.}
+            \resumeItem{Easily replaces services like ChatGPT Whisper, Cloud Convert, Createomate, JSON2Video, PDF(dot)co, Placid, and OCodeKit.}
+          \resumeItemListEnd
+      \resumeSubheading
+        {Software Engineering Project Team Lead}{January 2022 -- May 2022}
+        {California State University East Bay}{Hayward, California, United States}
+        \resumeItemListStart
+          \resumeItem{Led a team in developing a Java-based chat system as part of a Software Engineering course, taking primary responsibility for implementing client-side functionalities and contributing to shared classes.}
+          \resumeItem{Managed the project lifecycle to ensure timely completion and adherence to project requirements, from initial gathering to documentation.}
+          \resumeItem{Facilitated communication and coordination among team members, incorporating feedback for iterative improvements.}
+          \resumeItem{Engaged in regular meetings with the instructor acting as a client, providing updates and incorporating feedback.}
+          \resumeItem{Utilized Git and GitHub for version control and effective collaboration.}
+          \resumeItem{Demonstrated problem-solving skills and adeptness in troubleshooting technical issues.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\begin{center}
+  \tiny 377 McAllister Dr., Benicia, CA 94510
+\end{center}
+
+\end{document}
