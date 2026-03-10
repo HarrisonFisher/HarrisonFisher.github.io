@@ -102,13 +102,20 @@
 
 
 %-------------------------------------------
-%%%%%% CUSTOM FIELDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% OTHER CUSTOM COMMANDS %%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\resumeCert}[2]{
   \item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
   \end{tabular*}\vspace{-4pt}
 }
+\newcommand{\resumeSubheadingSimple}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
 %-------------------------------------------
 %%%%%% RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -194,7 +201,7 @@
       \resumeItem{Deploy, upgrade, and repair hardware. Migrate user profiles.}
     \resumeItemListEnd
 
-    \resumeSubheading
+    \resumeSubheadingSimple
     {Freelance}{May 2023 -- Present}
     \resumeItemListStart
       \resumeItem{....}
